@@ -456,7 +456,7 @@ extension CocoaMQTTWebSocket.StarscreamConnection: CertificatePinning {
     }
 }
 
-extension CocoaMQTTWebSocket.StarscreamConnection: WebSocketDelegate {
+extension CocoaMQTTWebSocket.StarscreamConnection: Starscream.WebSocketDelegate {
     public func didReceive(event: Starscream.WebSocketEvent, client: any Starscream.WebSocketClient) {
         switch event {
         case .connected(_):
